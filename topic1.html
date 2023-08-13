@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript For in loop</title>
+  </head>
+
+  <body>
+    <script>
+      function printObjectProperties(obj) {
+        if (Object.keys(obj).length === 0) {
+          console.log("Object is empty");
+        } else {
+          for (let props in obj) {
+            console.log(props + ":" + obj[props]);
+          }
+        }
+      }
+      var myObj = {
+        name: "Rakib",
+        age: 22,
+        address: "Khulna",
+        hobby: "Cricket",
+      };
+      printObjectProperties(myObj);
+    </script>
+  </body>
+</html>
